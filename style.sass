@@ -1,9 +1,15 @@
-8
+*
     box-sizing: border-box
+    margin: 0
+    padding: 0
 html
     height: 100%
 body
     background-color: #eaeaea
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
 header
     display: flex
     flex-direction: column
@@ -17,8 +23,10 @@ header
         justify-content: center
         align-items: center
         padding: 50px 95px
+        width: 1120px
     .menu-logo
         cursor: pointer
+        margin-right: 15px
     .top-menu
         display: flex
         justify-content: space-around
@@ -50,6 +58,7 @@ main
     .banner
         padding: 50px 674px 60px 87px
         background-size: cover
+        background-position: center center
         background-image: url('../img/background-banner.png')
         h1
             padding-top: 38px
@@ -62,6 +71,67 @@ main
             background: none
             border: 1px solid #c2c2c2
             padding: 8px 15px
-    .target-recipe
+            cursor: pointer
+            transition: 0.8s
+            &:hover
+                transform: scale(1.1)
+    .recipe
         display: flex
-        padding: 40px 45px 0 50px
+        padding: 40px 5px 0 50px
+        background-color: #ffffff
+        margin-top: 85px
+        .col
+            display: flex
+            flex-direction: column
+            padding-right: 40px
+            font-size: 18px
+            font-family: 'Josefin Sans', sans-serif
+
+            img
+                width: 315px
+                height: 210px
+                margin-bottom: 20px
+    .recipe-one
+        margin-top: 85px
+        display: flex
+        background-color: #ffffff
+        max-width: 1120px
+        .text-recipe
+            padding-left: 35px
+            h1
+                margin-top: 30px
+                color: #055555
+                font-family: 'Playfair Display', serif
+                font-weight: 900
+                font-size: 32px
+                padding-bottom: 30px
+            .scroll
+                font-family: 'Josefin Sans', sans-serif
+                font-weight: 300
+                h4
+                    font-family: 'Playfair Display', serif
+                    padding: 30px 0px
+footer
+    margin-top: 85px
+    background-color: #333333
+    display: flex
+    align-items: center
+    width: 1120px
+    justify-content: space-between
+    padding-right: 50px
+    padding-left: 87px
+    height: 180px
+    color: #636363
+    .logo
+        cursor: pointer
+    nav
+        .top-menu
+            display: flex
+            justify-content: space-around
+            list-style: none
+            li
+                margin-right: 15px
+            a
+                color: #636363
+                text-decoration: none
+                text-transform: uppercase
